@@ -27,9 +27,12 @@ jobs:
       - run: npm test
       - run: npm run build
         env:
-          VITE_BASE: /${{ github.event.repository.name }}/
+          # Served from the custom domain, so the app lives at the site root.
+          VITE_BASE: /
       - name: SPA fallback for client-side routing
         run: cp dist/index.html dist/404.html
+      - name: Custom domain
+        run: echo neurovault.ragolabs.com > dist/CNAME
       - uses: actions/configure-pages@v5
         with:
           enablement: true
