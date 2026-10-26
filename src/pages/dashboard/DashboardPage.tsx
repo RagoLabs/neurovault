@@ -67,7 +67,7 @@ export function DashboardPage() {
             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">
               <Brain className="size-4" /> {brand.name} · {format(today, 'EEEE, d MMMM yyyy')}
             </div>
-            <h1 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">{greeting()}, {surgeon.shortName}.</h1>
+            <h1 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">{greeting()}, <br />{surgeon.shortName}.</h1>
             <p className="mt-2 max-w-xl text-sm text-muted-foreground md:text-base">Here is an overview of your neurosurgical practice and patient recovery.</p>
           </div>
           <div className="flex flex-wrap gap-2 md:justify-end">
