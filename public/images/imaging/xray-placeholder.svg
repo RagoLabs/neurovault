@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <rect width="600" height="800" fill="#0a0f1a"/>
+  <g stroke="#9fb3c8" stroke-width="2" fill="#1b2738" opacity="0.9">
+    <rect x="240" y="120" width="120" height="60" rx="8"/>
+    <rect x="236" y="200" width="128" height="62" rx="8"/>
+    <rect x="232" y="282" width="136" height="64" rx="8"/>
+    <rect x="228" y="366" width="144" height="66" rx="8"/>
+    <rect x="224" y="452" width="152" height="68" rx="8"/>
+    <path d="M190 540 Q300 600 410 540 L430 700 Q300 740 170 700 Z"/>
+  </g>
+  <g fill="#3d4f66" opacity="0.8">
+    <rect x="244" y="183" width="112" height="14" rx="4"/><rect x="240" y="265" width="120" height="14" rx="4"/><rect x="236" y="349" width="128" height="14" rx="4"/><rect x="232" y="435" width="136" height="14" rx="4"/>
+  </g>
+  <text x="300" y="60" text-anchor="middle" fill="#cbd5e1" font-family="Inter, system-ui, sans-serif" font-size="20">ILLUSTRATIVE RADIOGRAPH</text>
+  <text x="300" y="770" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="14">Schematic placeholder — not a diagnostic image</text>
+</svg>

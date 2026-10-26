@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 620" fill="none">
+  <g stroke="#64748b" stroke-width="1.5" fill="#e2e8f0">
+    <rect x="80" y="20" width="40" height="18" rx="5"/><rect x="80" y="44" width="40" height="18" rx="5"/><rect x="80" y="68" width="40" height="18" rx="5"/><rect x="80" y="92" width="40" height="18" rx="5"/><rect x="80" y="116" width="40" height="18" rx="5"/><rect x="80" y="140" width="40" height="18" rx="5"/><rect x="80" y="164" width="40" height="18" rx="5"/>
+  </g>
+  <g stroke="#64748b" stroke-width="1.5" fill="#cbd5e1">
+    <rect x="76" y="192" width="48" height="22" rx="5"/><rect x="76" y="220" width="48" height="22" rx="5"/><rect x="76" y="248" width="48" height="22" rx="5"/><rect x="76" y="276" width="48" height="22" rx="5"/><rect x="76" y="304" width="48" height="22" rx="5"/><rect x="76" y="332" width="48" height="22" rx="5"/><rect x="76" y="360" width="48" height="22" rx="5"/><rect x="76" y="388" width="48" height="22" rx="5"/><rect x="76" y="416" width="48" height="22" rx="5"/><rect x="76" y="444" width="48" height="22" rx="5"/><rect x="76" y="472" width="48" height="22" rx="5"/><rect x="76" y="500" width="48" height="22" rx="5"/>
+  </g>
+  <g stroke="#64748b" stroke-width="1.5" fill="#94a3b8">
+    <rect x="70" y="528" width="60" height="26" rx="6"/><rect x="70" y="560" width="60" height="26" rx="6"/><rect x="70" y="592" width="60" height="26" rx="6"/><rect x="70" y="624" width="60" height="26" rx="6"/><rect x="70" y="656" width="60" height="26" rx="6"/>
+  </g>
+  <g fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="11">
+    <text x="130" y="105">Cervical</text><text x="130" y="360">Thoracic</text><text x="130" y="590">Lumbar</text>
+  </g>
+</svg>
