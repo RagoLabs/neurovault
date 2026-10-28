@@ -9,7 +9,7 @@ import { Logo } from './Logo'
 
 export function SidebarNav({ collapsed, onNavigate }: { collapsed: boolean; onNavigate?: () => void }) {
   return (
-    <nav className="flex-1 overflow-y-auto px-3 py-3 scrollbar-thin" aria-label="Main navigation">
+    <nav className="flex-1 overflow-y-auto px-3 py-3" aria-label="Main navigation">
       {navGroups.map((group) => (
         <div key={group.label} className="mb-4">
           <AnimatePresence initial={false}>
@@ -30,7 +30,7 @@ export function SidebarNav({ collapsed, onNavigate }: { collapsed: boolean; onNa
                   className={({ isActive }) =>
                     cn(
                       'group relative flex h-10 items-center gap-3 rounded-lg px-3 text-sm font-medium text-sidebar-foreground/85 transition-colors outline-none focus-visible:ring-2 focus-visible:ring-primary/60',
-                      'hover:bg-white/6 hover:text-white',
+                      'hover:bg-sidebar-accent hover:text-sidebar-accent-foreground',
                       isActive && 'bg-sidebar-accent text-sidebar-accent-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground',
                       collapsed && 'justify-center px-0',
                     )
@@ -39,7 +39,7 @@ export function SidebarNav({ collapsed, onNavigate }: { collapsed: boolean; onNa
                   {({ isActive }) => (
                     <>
                       {isActive && <span className="absolute left-0 top-1/2 h-5 w-0.5 -translate-y-1/2 rounded-r bg-primary" />}
-                      <item.icon className={cn('size-[18px] shrink-0 transition-colors', isActive ? 'text-primary' : 'text-sidebar-foreground/60 group-hover:text-white')} />
+                      <item.icon className={cn('size-[18px] shrink-0 transition-colors', isActive ? 'text-primary' : 'text-sidebar-foreground/60 group-hover:text-sidebar-accent-foreground')} />
                       {!collapsed && <span className="truncate">{item.label}</span>}
                     </>
                   )}
@@ -72,7 +72,7 @@ export function Sidebar({ collapsed, onToggle }: { collapsed: boolean; onToggle:
           <Logo className="size-9" />
           {!collapsed && (
             <div className="leading-tight">
-              <div className="font-semibold text-white tracking-tight">{brand.name}</div>
+              <div className="font-semibold text-sidebar-foreground tracking-tight">{brand.name}</div>
               <div className="text-[10px] uppercase tracking-wider text-sidebar-muted">{surgeon.shortName}'s practice</div>
             </div>
           )}
@@ -83,7 +83,7 @@ export function Sidebar({ collapsed, onToggle }: { collapsed: boolean; onToggle:
         <button
           type="button"
           onClick={onToggle}
-          className={cn('flex h-9 w-full items-center gap-2 rounded-lg px-3 text-xs font-medium text-sidebar-foreground/70 hover:bg-white/6 hover:text-white cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-primary/60', collapsed && 'justify-center px-0')}
+          className={cn('flex h-9 w-full items-center gap-2 rounded-lg px-3 text-xs font-medium text-sidebar-foreground/70 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-primary/60', collapsed && 'justify-center px-0')}
           aria-label={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
         >
           {collapsed ? <ChevronsRight className="size-4" /> : <><ChevronsLeft className="size-4" /> Collapse</>}

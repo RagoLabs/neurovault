@@ -47,7 +47,7 @@ export function AppShell() {
           <div className="flex h-16 items-center gap-3 border-b border-sidebar-border px-4">
             <Logo className="size-9" />
             <div className="leading-tight">
-              <div className="font-semibold text-white">{brand.name}</div>
+              <div className="font-semibold text-sidebar-foreground">{brand.name}</div>
               <div className="text-[10px] uppercase tracking-wider text-sidebar-muted">{surgeon.shortName}'s practice</div>
             </div>
           </div>
